@@ -1,0 +1,5 @@
+fix: true
+format: progress
+extend_config:
+  - .rubocop_rails.yml
+  - .rubocop_rspec.yml
