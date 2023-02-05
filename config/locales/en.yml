@@ -1,2 +1,5 @@
 en:
-  hello: "Hello world"
+  contracts:
+    errors:
+      too_big: "is too big"
+      negative: "must be positive"
