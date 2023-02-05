@@ -6,6 +6,7 @@ gem "rails", "~> 7.0.4"
 
 gem "alba", "~> 2.1"
 gem "bootsnap", require: false
+gem "bcrypt", "~> 3.1"
 gem "dry-validation", "~> 1.10"
 gem "oj", "~> 3.14"
 gem "pg", "~> 1.4"
