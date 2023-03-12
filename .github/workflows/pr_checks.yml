@@ -54,7 +54,6 @@ jobs:
           POSTGRES_PASSWORD: postgres
         run: |
           cp config/database.ci.yml config/database.yml
-          cat config/database.yml
           bundle exec rails db:create db:migrate
 
       - name: Run tests
