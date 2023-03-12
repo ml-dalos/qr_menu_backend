@@ -58,4 +58,11 @@ jobs:
           bundle exec rails db:create db:migrate
 
       - name: Run tests
+        env:
+          PGHOST: localhost
+          POSTGRES_DB: ci_test
+          POSTGRES_USER: ci_user
+          POSTGRES_PASSWORD: postgres
+          PGPORT: ${{ job.services.postgres.ports[5432] }}
+          RAILS_ENV: test
         run: bundle exec rspec spec
